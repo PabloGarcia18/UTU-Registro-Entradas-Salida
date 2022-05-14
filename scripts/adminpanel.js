@@ -61,11 +61,11 @@ function register(fn, ln, ci){ //Registar usuario
             ci: ci
         }
         console.log(usuario)
-        localStorage.setItem(usuario.ci, JSON.stringify(usuario))
+        localStorage.setItem(usuario.ci, JSON.stringify(usuario)) //Guardado en el LocalStorage por CI como Llave del localStorage
     }else{
         console.log("No estan todos los datos");
     }
-}
+} 
 function login(ci){ //Prueba del Login
     let userinfo = JSON.parse( localStorage.getItem(ci));
 

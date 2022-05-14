@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <script src="scripts/reloj.js"></script>
+    <title>Sistema de Control UTU</title>
+</head>
+<body>
+    <div class="bienvenido">
+        <p>Bienvenido</p>
+    </div>  
+    <div class="container-log">
+    <h1>REGISTRO</h1>
+    <input type="text" disabled id="mlogin"/>
+    <section class="ingreso">
+        <input type="text" name="cedula" id="ci" placeholder=" cedula">
+        <button id="sumbit_btn" onclick="login()">Ingresar</button>
+        <img src="./assets/ci.png">
+    </section>
+    </div>
+
+    <div class="clock-container">
+        <div class="clock-col">
+            <p class="clock-day clock-timer">
+            </p>
+            <p class="clock-label">
+                Dia
+            </p>
+        </div>
+        <div class="clock-col">
+            <p class="clock-hours clock-timer">
+            </p>
+            <p class="clock-label">
+                Hora
+            </p>
+        </div>
+        <div class="clock-col">
+            <p class="clock-minutes clock-timer">
+            </p>
+            <p class="clock-label">
+                Minutos
+            </p>
+        </div>
+        <div class="clock-col">
+            <p class="clock-seconds clock-timer">
+            </p>
+            <p class="clock-label">
+                Segundos
+            </p>
+        </div>
+    </div>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js'></script>
+<script type="text/javascript" src="scripts/ingreso.js"></script>
+</html>

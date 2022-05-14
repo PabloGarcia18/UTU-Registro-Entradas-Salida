@@ -1,0 +1,217 @@
+html,body
+{
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+.clock-day:before {
+    content: var(--timer-day);
+}
+
+.clock-hours:before {
+    content: var(--timer-hours);
+}
+
+.clock-minutes:before {
+    content: var(--timer-minutes);
+}
+
+.clock-seconds:before {
+    content: var(--timer-seconds);
+}
+
+body {
+    background: linear-gradient(45deg, #1870ed 0, #f18f88 100%);
+    font-family: 'Montserrat', 'sans-serif';
+    min-height: 100vh;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+}
+
+.clock-container {
+    position: absolute;
+    background-color: #080808;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15), 0 15px 90px 30px rgba(0, 0, 0, 0.25);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 40px;
+    left: 56%;
+    width: 165px;
+    height: 425px;
+    cursor:context-menu;
+    padding-bottom: 40px;
+}
+
+.clock-col {
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    min-width: 90px;
+    position: relative;
+}
+
+.clock-col:not(:last-child):before,
+.clock-col:not(:last-child):after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: -42px;
+}
+
+.clock-col:not(:last-child):before {
+    top: 35%;
+}
+
+.clock-col:not(:last-child):after {
+    top: 50%;
+}
+
+.clock-timer:before {
+    color: #fff;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+}
+
+.clock-label {
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    font-size: .7rem;
+    margin-top: 10px;
+}
+
+.clock-col+.clock-col {
+    margin-top: 20px;
+}
+.clock-col:before,
+.clock-col:after {
+    display: none !important;
+    }
+
+#ci{
+    position: absolute;
+    border-radius: 25px;
+    border-style: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 12pt;
+    top: 263px;
+    left: 99px;
+    margin-left: 40px;
+    height: 30px;
+    width: 120px;
+}
+#sumbit_btn{
+    position: absolute;
+    border-radius: 30px;
+    border-style: none;
+    background-color: whitesmoke;
+    width: 125px;
+    height: 35px;
+    top: 275px;
+    left: 104px;
+    cursor: pointer;
+    margin-top: 30px;
+    color: black;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    margin-left: 35px;
+    transition: all ease 0.3s;
+}
+
+#sumbit_btn:hover{
+    background: linear-gradient(45deg, #1870ed 0, #f18f88 100%);
+    color: whitesmoke;
+    transform: scale(1.1);
+    transition: all ease 0.3s;
+}
+.container-log {
+    position: absolute;
+    background-color: #201a1a;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15), 0 15px 90px 30px rgba(0, 0, 0, 0.349);
+    display: -webkit-box;
+    width: 350px;
+    height: 300px;
+    left: 39%;
+    padding-top: 40px;
+    z-index: 1;
+    padding-bottom: 40px;
+    z-index: 1;
+}
+.bienvenido {
+    position: absolute;
+    left: 43%;
+    top: 357px;
+    padding: 20px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 32px;
+    width: 100px;
+    height: 10px;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+@media (max-width: 1100px) {
+  .container-log {
+    left: 15%;
+    z-index: 1;
+  } 
+  .bienvenido{
+    left: 25%;
+    top: 257px;
+  }
+}
+#user{
+    position: absolute;
+    color: white;
+    left: 0;
+    top: 0;
+}
+.container-log h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 32px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    cursor:context-menu;
+}
+.container-log img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 257px;
+    left: 80px;
+}
+#mlogin
+{
+    position: absolute;
+    font-size: 14px;
+    background-color: transparent;
+    border: 0;
+    color: whitesmoke;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
+    border-radius: 0px;
+    transition: opacity ease 1s;
+    width: 190px;
+    height: 60px;
+    line-height: 60px;
+    opacity: 1;
+    top: 150px;
+    left: 105px;
+    font-family: monospace;
+}

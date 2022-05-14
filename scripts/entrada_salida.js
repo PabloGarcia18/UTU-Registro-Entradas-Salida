@@ -1,0 +1,1 @@
+document.getElementById("user").innerHTML = sessionStorage.getItem("LoginN") + " " + sessionStorage.getItem("LoginA");

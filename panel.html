@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos_panel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <title>Panel de Administrador</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GESTION DE USUARIOS</h1>
+        <button id="eliminar" onclick="cargar(1)">Eliminar Usuarios</button>
+        <button id="lista">Lista de Usuarios</button>
+        <button id="cargar" onclick="cargar(0)">Cargar Usuarios</button>
+        <button id="cerrar" onclick="regresar()">Cerrar</button>
+        <!-- <input type="text" name="busqueda" id="search" placeholder=" Buscar">-->
+        <div class="container-añadir">
+            <h1 id="aprof">Añadir Usuario al Sistema</h1>
+            <input type="text" name="nombre" id="fn" placeholder=" Nombre">
+            <input type="text" name="apellido" id="ln" placeholder=" Apellido">
+            <input type="text" name="cedula" id="ci" placeholder=" Cedula">
+            <button id="añadir" onclick="adduser()">Añadir Usuario</button>
+        </div>
+        <div class="container-eliminar">
+            <h1 id="elim">Eliminar Usuario del Sistema</h1>
+            <input type="text" id="cielim" placeholder=" Cedula">
+            <button id="eliminaru" onclick="removeusr()">Eliminar Usuario</button>
+
+        </div>
+        <div id="target"></div>
+    </div>
+    
+    <script src="scripts/adminpanel.js"></script>
+</body>
+</html>
